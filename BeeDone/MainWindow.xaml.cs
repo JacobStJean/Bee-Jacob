@@ -2,6 +2,7 @@ using BeeDone.Models;
 using Microsoft.UI.Xaml;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using Windows.ApplicationModel.Appointments.AppointmentsProvider;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -54,7 +55,13 @@ namespace BeeDone
 
         //}
 
-
+        private void btnSupprimerTache_Click(object sender, RoutedEventArgs e)
+        {
+            if (lvTaches.SelectedItem is Tache tacheSelectionnee)
+            {
+                Taches.Remove(tacheSelectionnee);
+            }
+        }
 
     }
 }

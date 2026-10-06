@@ -192,6 +192,7 @@
             Grid.Row="3"
             Grid.Column="0"
             Background="#FFD6D6"
+            Click="btnSupprimerTache_Click"
             Content="Supprimer la tâche sélectionnée"
             Foreground="#8B1A1A" />
     </Grid>
